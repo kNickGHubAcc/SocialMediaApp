@@ -21,7 +21,7 @@ const AdwertWidget = () => {
                 width="100%"
                 height="auto"
                 alt="advert"
-                src="https://my-social-media-app-server.vercel.app/assets/info4.webp"
+                src="https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/assets/info4.webp"
                 style={{ borderRadius: '0.75rem', margin: '0.75rem' }}
             />
             <FlexBetween>

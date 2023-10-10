@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
     //Ανάκτηση των στοιχείων ενός χρήστη με βάση το userId που παρέχεται
     const getUser = async () => {
-        const response = await fetch(`https://my-social-media-app-server.vercel.app/users/${userId}`, 
+        const response = await fetch(`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/users/${userId}`, 
         {
             method: 'GET',
             headers: { Authorization: `Bearer ${token}` }

@@ -50,8 +50,8 @@ const Form = () => {
             formData.append(value, values[value])
         }
         formData.append('picturePath', values.picture.name)
-
-        const savedUserResponse = await fetch('https://my-social-media-app-server.vercel.app/auth/register',      //Αποστολή POST request στην καθορισμένη διεύθυνση
+    
+        const savedUserResponse = await fetch('https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/auth/register',      //Αποστολή POST request στην καθορισμένη διεύθυνση
             {
                 method: 'POST',
                 body: formData
@@ -67,7 +67,7 @@ const Form = () => {
 
     //Σύνδεση ενός χρήστη
     const login = async (values, onSubmitProps) => {
-        const loggedInResponse = await fetch('https://my-social-media-app-server.vercel.app/auth/login',
+        const loggedInResponse = await fetch('https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/auth/login',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

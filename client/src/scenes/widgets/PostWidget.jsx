@@ -23,7 +23,7 @@ const PostWidget = ({postId, postUserId, name, description, location, picturePat
 
     //Ενημέρωση ενός συγκεκριμένου post σε περίπτωση like
     const patchLike = async () => {
-        const response = await fetch(`https://my-social-media-app-server.vercel.app/posts/${postId}/like`,
+        const response = await fetch(`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/posts/${postId}/like`,
             {
                 method: 'PATCH',
                 headers: {
@@ -55,7 +55,7 @@ const PostWidget = ({postId, postUserId, name, description, location, picturePat
                     height="auto"
                     alt="post"
                     style={{ borderRadius: '0.75rem', marginTop: '0.75rem' }}
-                    src={`https://my-social-media-app-server.vercel.app/assets/${picturePath}`}
+                    src={`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/assets/${picturePath}`}
                 />
             )}
             <FlexBetween mt="0.25rem">

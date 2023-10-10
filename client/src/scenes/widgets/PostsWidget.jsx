@@ -11,7 +11,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
     //Ανάκτηση όλων των posts
     const getPosts = async () => {
-        const response = await fetch('https://my-social-media-app-server.vercel.app/posts', {
+        const response = await fetch('https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/posts', {
             method: 'GET',
             headers: { Authorization: `Bearer ${token}` }
         })
@@ -21,7 +21,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
     //Ανάκτηση των posts ενός συγκεκριμένου χρήστη
     const getUserPosts = async () => {
-        const response = await fetch(`https://my-social-media-app-server.vercel.app/posts/${userId}/posts`,
+        const response = await fetch(`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/posts/${userId}/posts`,
             {
                 method: 'GET',
                 headers: { Authorization: `Bearer ${token}` }

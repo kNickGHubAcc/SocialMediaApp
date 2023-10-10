@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
     const isFriend = friends.find((friend) => friend._id === friendId)   //Αναζήτηση ενός φίλου που έχει id ίσο με την τιμή της friendId
 
     const patchFriend = async () => {
-        const response = await fetch(`https://my-social-media-app-server.vercel.app/users/${_id}/${friendId}`,   //Αποστολή ενός PATCH request σε καθορισμένη διεύθυνση
+        const response = await fetch(`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/users/${_id}/${friendId}`,   //Αποστολή ενός PATCH request σε καθορισμένη διεύθυνση
             {
                 method: 'PATCH',
                 headers: {

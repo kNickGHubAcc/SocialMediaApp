@@ -14,7 +14,7 @@ const FriendListWidget = ({ userId }) => {
 
     //Ανάκτηση της λίστας των φίλων ενός χρήστη
     const getFriends = async () => {
-        const response = await fetch(`https://my-social-media-app-server.vercel.app/users/${userId}/friends`,
+        const response = await fetch(`https://vercel.com/katisnikosacc-gmailcom/my-social-media-app-server/users/${userId}/friends`,
             {
                 method: 'GET',
                 headers: { Authorization: `Bearer ${token}` }
